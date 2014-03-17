@@ -24,7 +24,7 @@ module.exports = (opts)->
       successCallback()
 
     ozma({
-      gulp: onWrite
+      pipe: onWrite
       success: callback
     }).exec({
       config: opts
