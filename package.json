@@ -1,6 +1,6 @@
 {
   "name": "gulp-ozjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "gulp plugin for ozma -- http://ozjs.org/ozma/",
   "main": "index.js",
   "scripts": {
@@ -16,13 +16,13 @@
     "ozma",
     "amd"
   ],
-  "author": "Keith Yao",
+  "author": "kebot",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kebot/gulp-ozjs/issues"
   },
   "homepage": "https://github.com/kebot/gulp-ozjs",
-  "devDependencies": {
+  "peerDependencies": {
     "coffee-script": "^1.7.1"
   },
   "dependencies": {
