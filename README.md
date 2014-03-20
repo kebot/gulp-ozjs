@@ -1,19 +1,27 @@
 gulp-ozjs
 =========
-
 gulp tasks for oz.js and ozma.js  http://ozjs.org
 
-ozma = require('gulp-ozjs')
+
+Simple gulp file
+---------
 
 ```javascript
-  ozma({
-    src: '',
-    saveConfig: false,
-    config: {
-      baseUrl: '',
-      distUrl: '',
-      loader: 'lib/oz.js',
-      disableAutoSuffix: true
-    }
-  })
+ozma = require('gulp-ozjs')
+uglify = require('gulp-uglify');
+
+gulp.task('ozma', function(){
+  gulp.src([
+    'app.js',
+    'subapp/app.js'
+  ]).pipe(ozma({
+    baseUrl: 'static/js',
+    disableAutoSuffix: true,
+    loader: 'lib/oz.js'
+  })).pipe(uglify()).pipe(gulp.dest('dist'));
+});
 ```
+
+# TODO
+1. read file in streams first, not in directly in filesystem.
+
