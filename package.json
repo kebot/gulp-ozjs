@@ -22,9 +22,6 @@
     "url": "https://github.com/kebot/gulp-ozjs/issues"
   },
   "homepage": "https://github.com/kebot/gulp-ozjs",
-  "peerDependencies": {
-    "coffee-script": "*"
-  },
   "dependencies": {
     "gulp-util": "^3.0.1",
     "ozjs": "^2.6.4",
