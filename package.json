@@ -1,6 +1,6 @@
 {
   "name": "gulp-ozjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "gulp plugin for ozma -- http://ozjs.org/ozma/",
   "main": "index.js",
   "scripts": {
@@ -23,10 +23,12 @@
   },
   "homepage": "https://github.com/kebot/gulp-ozjs",
   "peerDependencies": {
-    "coffee-script": "^1.7.1"
+    "coffee-script": "*"
   },
   "dependencies": {
-    "gulp-util": "~2.2.14",
-    "through2": "~0.4.1"
+    "gulp-util": "^3.0.1",
+    "ozjs": "^2.6.4",
+    "ozma": "^1.9.1",
+    "through2": "^0.6.1"
   }
 }
