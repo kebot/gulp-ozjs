@@ -11,7 +11,7 @@ ozma = require('gulp-ozjs')
 uglify = require('gulp-uglify');
 
 gulp.task('ozma', function(){
-  gulp.src([
+  var stream = gulp.src([
     'app.js',
     'subapp/app.js'
   ]).pipe(ozma({
@@ -19,6 +19,11 @@ gulp.task('ozma', function(){
     disableAutoSuffix: true,
     loader: 'lib/oz.js'
   })).pipe(uglify()).pipe(gulp.dest('dist'));
+  return stream;
+});
+
+gulp.task('watch', function(){
+  return gulp.watch(['static/js/**/*.js'], ['ozma']);
 });
 ```
 
