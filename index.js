@@ -31,7 +31,7 @@ module.exports = function(opts) {
       return function(output, output_code, output_mods, successCallback) {
         var joinedFile;
         joinedFile = new gutil.File({
-          base: opts.baseUrl,
+          base: opts.distUrl,
           path: output,
           contents: new Buffer(output_code)
         });
