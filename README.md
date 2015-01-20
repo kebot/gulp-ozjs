@@ -1,5 +1,7 @@
 gulp-ozjs
 =========
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kebot/gulp-ozjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 gulp tasks for oz.js and ozma.js  http://ozjs.org
 
 
